@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <h2>Konversi Nilai Huruf Menjadi Keterangan Prediket</h2>
+    <script>
+        let namaSiswa = prompt("Masukkan Nama Siswa: ");
+        let nilaiHuruf = prompt("Masukkan Nilai Huruf (A, B, C, atau D): ");
+        let prediket = "";
+
+        if (nilaiHuruf === "A") {
+            prediket = "Sangat Baik";
+        } else if (nilaiHuruf    === "B") {
+            prediket = "Baik";
+        } else if (nilaiHuruf === "C") {
+            prediket = "Cukup";
+        } else if (nilaiHuruf === "D") {
+            prediket = "Kurang";
+        } else {
+            prediket = "Nilai Huruf Tidak Valid";
+        }
+
+        document.write("Nama Siswa: <b>" + namaSiswa + "</b><br>");
+        document.write("Nilai Huruf: <b>" + nilaiHuruf + "</b><br>");
+        document.write("Keterangan Prediket: <b>" + prediket + "</b><br>");
+    </script>
+</body>
+</html>
